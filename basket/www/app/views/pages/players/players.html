@@ -1,0 +1,9 @@
+<ion-view title="{{players.title}}">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="player in players.playerList" class="item item-icon-right"  ui-sref="players.detail({player:player})">
+        <span>{{player.number}} - {{player.fname}} {{player.lname}}</span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -16,19 +16,33 @@
     <script src="assets/lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
+    <!--<script src="cordova.js"></script>-->
 
     <!-- load angular main and angular basket router -->
     <script src="app/app.js"></script>
-  </head>
-  <body ng-app="starter">
+    <script src="app/app-routes.js"></script>
+    
+    <!-- load angular services -->
+    <script src="app/services/playerService.js"></script>
+    
+    <!-- load angular controller -->
+    <script src="app/controllers/playersCtrl.js"></script>
 
-    <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
-      </ion-header-bar>
-      <ion-content>
-      </ion-content>
-    </ion-pane>
+    
+  </head>
+  <body ng-app="basket">
+    
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button class="button-clear">
+        <i class="ion-arrow-left-c"></i> Back
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    
+    <ion-tabs class="tabs-positive">
+      <ion-tab title="Players" icon="ion-ios-basketball-outline" ui-sref="players">
+          <ion-nav-view name="players"></ion-nav-view>
+      </ion-tab>
+    </ion-tabs>
+    
   </body>
 </html>
