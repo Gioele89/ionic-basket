@@ -6,12 +6,12 @@ angular.module('playerService',[])
     
     // get a single user
     playerFactory.get = function(id) {
-        return $http.get('https://basket2-gioele89.c9.io/api/players/'+id);  
+        return $http.get('http://192.168.50.111:8081/api/players/'+id);  
     };
     
     // get all players
     playerFactory.all = function() {
-        return $http.get('https://basket2-gioele89.c9.io/api/players');
+        return $http.get('http://192.168.50.111:8081/api/players');
     };
     
     // create a player

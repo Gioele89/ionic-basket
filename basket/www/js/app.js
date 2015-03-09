@@ -9,6 +9,11 @@ angular.module('basket', [
   'playersCtrl',
   'playerService'])
 
+.config(function($ionicConfigProvider){
+  $ionicConfigProvider.tabs.position('bottom');
+  $ionicConfigProvider.navBar.alignTitle('center')
+})
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard

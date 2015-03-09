@@ -18,14 +18,15 @@ angular.module('basketRoutes', ['ionic'])
         
         .state('players.index', {
             url: '',
-            templateUrl : 'app/views/pages/players/players.html',
+            templateUrl : 'views/pages/players/players.html',
             controller  : 'playersController as players', 
         })
     
         .state('players.detail', {
             url: '',
             params: {player:{}},
-            templateUrl : 'app/views/pages/players/player-detail.html',
+            templateUrl : 'views/pages/players/player-detail.html',
             controller  : 'playerDetailController as playerDetail'
         });
+        
 });

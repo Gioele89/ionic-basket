@@ -1,0 +1,11 @@
+<ion-view title="{{players.title}}">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="player in players.playerList" class="item item-avatar"  ui-sref="players.detail({player:player})">
+  			<img src="http://192.168.50.111:8081{{player.picture}}"> 
+			<span><h2>{{player.fname}} {{player.lname}}</h2></span>
+		</div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
